@@ -46,7 +46,7 @@
 | **Payment** | Razorpay API |
 | **AI Chatbot** | Groq API + LLaMA 3.1 model |
 | **Data** | CSV (cleaned_data.csv) with 5.69 MB dataset |
-| **Deployment** | Reflex Cloud (reflex.run) |
+| **Deployment** | huggingface  |
 
 ---
 
