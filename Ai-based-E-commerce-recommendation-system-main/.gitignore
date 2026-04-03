@@ -1,0 +1,31 @@
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Data files and embeddings
+*.csv
+*.npy
+
+# Secrets
+serviceAccountKey.json
+
+# IDEs
+.vscode/
+.idea/
+
+# Streamlit specific
+.streamlit/
+
+# Node
+node_modules/
+
+# Mac
+.DS_Store
