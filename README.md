@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-**AI-Store** is a full-stack e-commerce application built with **Reflex** (Python-based frontend framework) that uses **Machine Learning** to provide personalized product recommendations. The platform combines three AI recommendation algorithms to deliver the best shopping experience.
+**AI-Store** is a full-stack e-commerce application built with **Streamlit** that uses **Machine Learning** to provide personalized product recommendations. The platform combines three AI recommendation algorithms to deliver the best shopping experience.
 
 ---
 
@@ -195,7 +195,7 @@ cosine_sim = cosine_similarity(tfidf_matrix, tfidf_matrix)
 
 ---
 
-## 🗄️ State Management (Reflex Framework)
+## 🗄️ State Management 
 
 ### **UserState** (`user_state.py`)
 ```python
@@ -348,12 +348,9 @@ User clicks chat icon → ChatState.is_open = true
 
 ---
 
-## 🚀 Deployment (Reflex Cloud)
+## 🚀 Deployment 
 
 ```bash
-# Deploy with environment variables
-reflex deploy --envfile .env
-
 # Environment variables needed:
 FIREBASE_API_KEY
 FIREBASE_AUTH_DOMAIN
@@ -370,13 +367,6 @@ RAZORPAY_KEY_SECRET
 
 ## 📊 Technical Highlights
 
-### **Why Reflex?**
-✅ Full Python stack (no JavaScript needed)
-✅ Reactive state management (auto UI updates)
-✅ Built-in routing & components
-✅ Easy deployment to Reflex Cloud
-✅ Real-time updates without websockets setup
-
 ### **Why 3 ML Algorithms?**
 ✅ **Hybrid approach** handles different scenarios
 ✅ **New users** get recommendations without history
@@ -389,30 +379,6 @@ RAZORPAY_KEY_SECRET
 - ML computation: Fast (cosine similarity is O(n²) but small dataset)
 - Recommendation caching: Could cache results (future optimization)
 - Load balancing: Reflex Cloud handles auto-scaling
-
----
-
-## 🔧 How to Run Locally
-
-```bash
-# 1. Activate virtual environment
-.venv\Scripts\activate  # Windows
-# or
-source .venv/bin/activate  # macOS/Linux
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Set up .env file with all secrets
-cp .env.example .env
-# Edit .env with your API keys
-
-# 4. Run the app
-reflex run
-
-# 5. Open browser
-# http://localhost:3000
-```
 
 ---
 
@@ -431,7 +397,7 @@ reflex run
 
 ## ✨ Summary
 
-**AI-Store** combines a modern Python web framework (Reflex) with sophisticated ML algorithms (Collaborative + Content + Rating-based filtering) to deliver:
+**AI-Store** combines a modern Python web framework with sophisticated ML algorithms (Collaborative + Content + Rating-based filtering) to deliver:
 
 1. **Personalized recommendations** for each user
 2. **Seamless e-commerce experience** (search, cart, checkout, payment)
